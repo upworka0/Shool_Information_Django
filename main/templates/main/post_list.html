@@ -1,0 +1,66 @@
+{%extends "main/base.html"%}
+{%load static%}
+
+{%block styles%}
+<!-- Animate CSS -->
+<style>
+	.card-img-top {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+}
+</style>
+{%endblock styles%}
+
+{%block javascript%}
+{%endblock javascript%}
+
+{%block content%}
+{%include 'main/mainNav.html'%}
+<div class="container mt-2">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{%url 'dashboard'%}">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">News</li>
+    </ol>
+  </nav>
+</div>
+
+<div class="container wow fadeIn">
+	<h1 class="title">school news</h1>
+	<hr>
+	<div class="row">
+		{%for post in posts%}
+		<div class="col-6">
+			<div class="card shadow-sm">
+				<a href="{% url 'post-detail' post.pk %}"><img class="card-img-top" src="{{post.image.url}}" alt="{{post.title}}"></a>
+				<div class="card-body">
+					<h3 class="card-title font-weight-bold">{{post.title}}</h3>
+					<p class="card-text">{{post.desc|safe|linebreaks|truncatewords:"50"}}</p>
+					<a href="{% url 'post-detail' post.pk %}">read full post</a>
+					<p class="card-text"><small class="text-muted">by {{post.author.first_name}} {{post.author.last_name}} on {{post.date_posted|date:"F d, Y f A"}}</small></p>
+				</div>
+			</div>
+		</div>
+	{%endfor%}
+	</div>
+
+
+{%endblock content%}
+	<!-- <div class="row">
+	<div class="col-4">
+		<div class="card shadow-sm">
+			<a href="{{photo.image.url}}" data-fancybox="images" data-caption="{{photo.title}}">
+					<img class=" card-img-top" src="{{photo.image.url}}" alt="{{photo.title}}">
+			</a>
+			<div class="card-body">
+				<h5 class="card-title font-weight-bold">{{photo.title}}</h5>
+				<p class="card-text">{{photo.desc}}</p>
+			</div>
+			<div class="card-footer text-right">
+				<small class="text-muted"> | by {{photo.author}}</small>
+			</div>
+		</div>
+	</div>
+
+</div> -->

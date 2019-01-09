@@ -1,0 +1,57 @@
+{%extends "administrator/base.html"%}
+{%load static%}
+{%load crispy_forms_tags%}
+
+{%block styles%}
+{%endblock styles%}
+
+{%block javascript%}
+<script>
+  jQuery(document).ready(function($) {
+    $(".clickable-row").css("cursor", "pointer");
+    $(".clickable-row").click(function() {
+      window.location = $(this).data("href");
+    });
+  });
+</script>
+
+{%endblock javascript%}
+
+{%block breadcrumbs%}
+{%endblock breadcrumbs%}
+
+{%block content%}
+
+<div class="container wow fadeIn">
+  <span class="align-middle display-4 font-weight-bold mt-4">
+    view staff
+  </span>
+  <a href="{%url 'staff-create'%}" class="align-middle btn btn-outline-primary">add new</a>
+  <hr>
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-hover shadow-sm">
+        <caption>Click anywhere in a row to view the corresponding staff's profile.</caption>
+        <thead class="bg-primary text-white">
+          <tr>
+            <th scope="col">Employee ID</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Position/Title</th>
+            <th scope="col">Advisory</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%for staff in staffs%}
+          <tr class="clickable-row" data-href={%url 'staff-detail' staff.id%}>
+            <th scope="row">{{staff.school_id}}</th>
+            <td>{{staff.last_name}}, {{staff.first_name}} {{staff.middle_name}}</td>
+            <td>{{staff.position}}</td>
+            <td>{{staff.advisory_section}}</td>
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{%endblock content%}

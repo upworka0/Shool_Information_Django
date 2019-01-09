@@ -1,0 +1,104 @@
+{%extends "administrator/base.html"%}
+{%load static%}
+{%load crispy_forms_tags%}
+
+{%block styles%}
+<style>
+  .card {
+    transition: all 0.6s;
+
+  }
+  .card:hover {
+    background-color: #eee;
+  }
+</style>
+{%endblock styles%}
+
+{%block javascript%}
+<script>
+  jQuery(document).ready(function($) {
+    $(".clickable-card").css("cursor", "pointer");
+    $(".clickable-card").click(function() {
+      window.open($(this).data("href"), $(this).data("target"));
+    });
+    $('#checkAll').click(function() {
+      $('.student-checkbox').prop('checked', this.checked);
+    });
+  });
+</script>
+{%endblock javascript%}
+
+{%block breadcrumbs%}
+<div class="container mt-2">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{%url 'dashboard'%}">Admin</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Manage Reports</li>
+    </ol>
+  </nav>
+</div>
+{%endblock breadcrumbs%}
+
+{%block content%}
+<div class="container wow fadeIn">
+
+  <span class="align-middle display-4 font-weight-bold mt-4">
+    reports
+  </span>
+  <a href="{%url 'student-create' %}" class="align-middle btn btn-outline-info">add new</a>
+  <hr>
+  <div class="row">
+    <div class="col-3">
+      <div class="form-group">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="search by title or author" aria-label="search" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-success" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-7">
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Month</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>November</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Year</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>2018</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="card-columns">
+        {%for report in reports%}
+        <div class="card">
+          <div class="card-body text-center">
+            <a href="{{report.file.url}}" class="card-title"><i class="fa fa-{{report.thumbnail}} fa-4x"></i></a>
+            <p class="card-text">{{report}}</p>
+            <a href="{%url 'report-update' report.pk%}" class="card-link"><i class="fa fa-edit"></i> edit</a>
+            <a href="#" class="card-link"><i class="fa fa-trash"></i> delete</a>
+          </div>
+        </div>
+        {%endfor%}
+      </div>
+    </div>
+  </div>
+
+</div>
+{%endblock content%}

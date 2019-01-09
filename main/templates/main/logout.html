@@ -1,0 +1,31 @@
+{%extends "main/base.html"%}
+{%load static%}
+{%load crispy_forms_tags%}
+
+{%block styles%}
+{%endblock styles%}
+
+{%block javascript%}
+{%endblock javascript%}
+
+{%block content%}
+<div class="container mt-2">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{%url 'dashboard'%}">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Logout</li>
+    </ol>
+  </nav>
+</div>
+	<div class="container fadeIn">
+		<div class="row mt-4">
+			<div class="col-6 border rounded shadow">
+				<span class="display-4 font-weight-bold">
+					logout
+				</span>
+				<p>You have been logged out. <a href="{%url 'login'%}">Sign in again?</a></p>
+			</div>
+		</div>
+	</div>
+
+{%endblock content%}

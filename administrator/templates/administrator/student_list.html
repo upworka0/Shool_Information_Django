@@ -1,0 +1,113 @@
+{%extends "administrator/base.html"%}
+{%load static%}
+{%load crispy_forms_tags%}
+
+{%block styles%}
+{%endblock styles%}
+
+{%block javascript%}
+<script>
+  jQuery(document).ready(function($) {
+    $('#checkAll').click(function () {
+     $('.student-checkbox').prop('checked', this.checked);
+ });
+  });
+</script>
+{%endblock javascript%}
+
+{%block breadcrumbs%}
+{%endblock breadcrumbs%}
+
+{%block content%}
+<div class="container wow fadeIn">
+  <span class="align-middle display-4 font-weight-bold mt-4">
+    students
+  </span>
+  <a href="{%url 'student-create' %}" class="align-middle btn btn-outline-success">add new</a>
+  <hr>
+  <form method="GET" action="" class="form-inline">
+    <div class="input-group">
+      <select class="form-control" id="inputGroupSelect04" aria-label="Example select with button addon">
+        <option selected>actions</option>
+        <option value="1">transfer</option>
+        <option value="2">delete</option>
+        <option value="3">generate blank SF9</option>
+        <option value="4">generate blank SF10</option>
+        <option value="5">print</option>
+      </select>
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="submit"><i class="fa fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="input-group ml-auto">
+      <a href="{%url 'student-list'%}" class="btn btn-outline-secondary mr-2">reset search </a>
+      <div class="input-group">
+        <input type="text" class="form-control" name="q" placeholder="search by LRN or name" aria-label="search" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-success" type="submit" id="button-addon2"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+
+
+
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-hover shadow-sm">
+        <caption>Click anywhere in a row to to edit the corresponding student's information.</caption>
+        <thead class="bg-success text-white">
+          <tr>
+            <th scope="col"><input id="checkAll" type="checkbox"></th>
+            <th scope="col">LRN</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Sex</th>
+            <th scope="col">Age</th>
+            <th scope="col">Grade & Section</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%for student in student_list%}
+          <tr class="clickable-row" data-href='{%url 'student-update' student.pk%}'>
+            <th><input value="{{student.pk}} " class="student-checkbox" type="checkbox"></th>
+            <th scope="row">{{student.lrn}}</th>
+            <td>{{student}}</td>
+            <td>{{student.get_sex_display}}</td>
+            <td>{{student.calculate_age}}</td>
+            <td>{{student.section}}</td>
+            <td><a href="{%url 'student-update' student.pk%}"><i class="fa fa-edit"></i></a> <a href="{%url 'student-delete' student.pk%}"><i class="fa fa-trash text-danger"></i></a> </td>
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table>
+      </form>
+      
+      {% if is_paginated %}
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          {% if page_obj.has_previous %}
+          <li class="page-item"><a class="page-link" href="?page=1" tabindex="-1"><i class="fas fa-angle-double-left"></i></a></li>
+          <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}" tabindex="-1"><i class="fas fa-angle-left"></i></a></li>
+          {% endif %}
+
+          {% for num in page_obj.paginator.page_range %}
+            {% if page_obj.number == num %}
+              <li class="page-item"><a class="page-link" href="?page={{ num }}">{{num}}</a></li>
+            {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+              <li class="page-item"><a class="page-link" href="?page={{ num }}">{{num}}</a></li>
+            {% endif %}
+          {% endfor %}
+
+          {% if page_obj.has_next %}
+          <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}"><i class="fas fa-angle-right"></i></a></li>
+          <li class="page-item"><a class="page-link" href="?page={{ page_obj.paginator.num_pages }}"><i class="fas fa-angle-double-right"></i></a></li>
+          {% endif %}
+
+        </ul>
+      </nav>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{%endblock content%}

@@ -1,0 +1,27 @@
+[{
+    "first_name": "JUSTINE",
+    "last_name": "ADONA",
+    "middle_name": "MANCAO",
+    "lrn": "109392130001",
+    "sex": "M",
+    "birthdate": "2007-01-02",
+    "section_id": 6,
+    "home_address": "512 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "ADONA, JONATAHAN",
+    "contact_number": "091097919742",
+    "remarks": ""
+  },
+  {
+    "first_name": "RHEBEN",
+    "last_name": "AGUILAR",
+    "middle_name": "HONRADA",
+    "lrn": "196439120077",
+    "sex": "M",
+    "birthdate": "2007-12-23",
+    "section_id": 6,
+    "home_address": "42 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "AGUILAR, IRENEO PAAS JR",
+    "contact_number": "09256264865",
+    "remarks": ""
+  }
+]

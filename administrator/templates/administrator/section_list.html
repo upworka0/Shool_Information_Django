@@ -1,0 +1,65 @@
+{%extends "administrator/base.html"%}
+{%load static%}
+{%load crispy_forms_tags%}
+
+{%block styles%}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+{%endblock styles%}
+
+{%block javascript%}
+<!-- Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="{% static '/assets/js/plugins/bootstrap-selectpicker.js'%}"></script>
+<script type="text/javascript">
+  $('document').ready(function() {
+    $('.clickable-header').css("cursor", "pointer");
+    $(".clickable-header").click(function() {
+      window.location = $(this).data("href");
+    });
+  });
+</script>
+{%endblock javascript%}
+
+{%block breadcrumbs%}
+{%endblock breadcrumbs%}
+
+{%block content%}
+<div class="container">
+  <h1 class="display-4 font-weight-bold">
+    sections
+  </h1>
+  <form class="" action="." method="GET">
+    <a href="#" class="btn btn-rose">add new</a>
+    <select name="SY" class="selectpicker" data-style="btn-primary" title="School Year" onchange="this.form.submit()">
+    {%for term in terms%}
+      <option value="{{term}}">{{term}}</option>
+    {%endfor%}
+    </select>
+  </form>
+
+  <hr>
+  <div class="row">
+  {% for section in sections %}
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header card-header-primary clickable-header">
+          <h4 class="card-title font-weight-bold">{{section}}</h4>
+          <p class="category">{{section.term}}</p>
+        </div>
+        <div class="card-body">
+          Male: | Female :
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="material-icons">perm_identity</i> <p>Adviser: <a href="#0" class="card-link">Miss Teacher</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% empty %}
+  <div class="col-12">
+    <h5>No sections in this school year.</h5>
+  </div>
+  {%endfor%}
+  </div>
+</div>
+{%endblock content%}

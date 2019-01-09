@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+html, body {
+  /* width: 100% !important;
+  height: 100% !important; */
+  font-family: 'Karla', sans-serif;
+  color: #222;
+}
+
+html {
+  /* overflow-y: hidden; */
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: inherit;
+}
+
+.navbar .nav-link {
+  font-size: 130%;
+}

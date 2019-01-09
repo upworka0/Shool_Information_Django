@@ -1,0 +1,139 @@
+{%extends "administrator/base.html"%}
+{%load static%}
+{%load humanize%}
+{%load crispy_forms_tags%}
+
+{%block styles%}
+{%endblock styles%}
+
+{%block javascript%}
+{%endblock javascript%}
+
+{%block breadcrumbs%}
+<div class="container mt-2">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{%url 'dashboard'%}">Admin</a></li>
+      <li class="breadcrumb-item"><a href="{%url 'staff-list'%}">Manage Staff</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{object.first_name}}'s Profile</li>
+    </ol>
+  </nav>
+</div>
+{%endblock breadcrumbs%}
+
+{%block content%}
+
+<div class="container wow fadeIn">
+  <div class="modal fade" tabindex="-1" role="dialog" id="modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <form method="post" action="{%url 'staff-delete' object.pk%}">
+          {%csrf_token%}
+          <div class="modal-header">
+            <h5 class="modal-title">Delete Staff</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <h6>Are you sure you want to delete {{object.first_name}}'s profile?</h6>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-muted" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-danger" name="submit" value="Delete">
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <span class="display-4 font-weight-bold mt-4">
+    staff profile
+  </span>
+  <div class="row no-gutters border rounded shadow-sm">
+    <div class="col-3 text-center">
+      <img class="img-fluid border rounded-circle" src="{{object.image.url}}" alt="{{object.first_name}}'s Photo">
+      <div>
+        <a href="{%url 'staff-update' staff.id%}" class="btn btn-primary mt-2"><i class="fas fa-user-edit fa-lg"></i></a>
+        <button class="btn btn-danger mt-2" data-toggle="modal" data-target="#modal"><i class=" fas fa-user-times fa-lg"></i></button>
+      </div>
+
+    </div>
+    <div class="col-9">
+      <h3>{{object.last_name}}, {{object.first_name}} {{object.middle_name|default_if_none:""}}</h3>
+      <span class="bg-info text-white rounded p-1"><i class="fas fa-user-tie"></i> {{object.position}}</span>
+      <span class="bg-success text-white rounded p-1"><i class="fas fa-money-check-alt"></i> PHP{{object.salary|intcomma}}</span>
+      {%if object.advisory_section%}
+      <span class="bg-primary text-white rounded p-1"><i class="fas fa-chalkboard-teacher"></i> {{object.advisory_section}}</span>
+      {%endif%}
+      <hr>
+      <h5><strong><i class="fas fa-info-circle"></i> personal information</strong></h5>
+      <dl class="row">
+        <dt class="col-sm-3">Sex</dt>
+        <dd class="col-sm-3">{{object.get_sex_display}}</dd>
+        <dt class="col-sm-3">Age</dt>
+        <dd class="col-sm-3">{{object.calculate_age}}</dd>
+        <dt class="col-sm-3">Birthdate</dt>
+        <dd class="col-sm-3">{{object.birthdate}}</dd>
+        <dt class="col-sm-3">Civil Status</dt>
+        <dd class="col-sm-3">{{object.get_civil_status_display}}</dd>
+      </dl>
+      <hr>
+      <h5><strong><i class="fas fa-envelope"></i> contact details</strong></h5>
+      <dl class="row">
+        <dt class="col-sm-3">Email address</dt>
+        <dd class="col-sm-3">{{object.email_address}}</dd>
+        <dt class="col-sm-3">Contact Number</dt>
+        <dd class="col-sm-3">{{object.contact_number}}</dd>
+      </dl>
+      <hr>
+      <h5><strong><i class="fas fa-file-alt"></i> documents</strong></h5>
+      <div class="row">
+        {%if not object.appointment_file and not object.pds_file and not object.prc_license_file and not object.saln_file%}
+        <div class="col-12 text-center">
+          <p class="text-muted">No files uploaded yet. Please upload documents using the Edit Profile page.</p>
+        </div>
+        {%else%}
+        {%if object.appointment_file%}
+        <div class="col-6 text-center">
+          <a href="{{object.appointment_file.url}}">
+            <i class="fas fa-file-contract fa-4x"></i>
+            <h5>Appointment File</h5>
+          </a>
+        </div>
+        {%endif%}
+        {%if object.pds_file%}
+        <div class="col-6 text-center">
+          <a href="{{object.pds_file.url}}">
+            <i class="fas fa-file-alt fa-4x"></i>
+            <h5>Personal Data Sheet</h5>
+          </a>
+        </div>
+        {%endif%}
+
+        {%if object.prc_license_file%}
+        <div class="col-6 text-center">
+          <a href="{{object.prc_license_file.url}}">
+            <i class="fas fa-id-card fa-4x"></i>
+            <h5>PRC License</h5>
+          </a>
+        </div>
+        {%endif%}
+
+        {%if object.saln_file%}
+        <div class="col-6 text-center">
+          <a href="{{object.saln_file.url}}">
+            <i class="fas fa-file-invoice-dollar fa-4x"></i>
+            <h5>SALN File</h5>
+          </a>
+        </div>
+        {%endif%}
+        {%endif%}
+      </div>
+    </div>
+  </div>
+</div>
+{%endblock content%}

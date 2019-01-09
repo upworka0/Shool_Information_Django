@@ -1,0 +1,610 @@
+[
+  {
+    "first_name": "LHOYD JADE",
+    "last_name": "ADESER",
+    "middle_name": "ELESTERIO",
+    "lrn": "136755140413",
+    "gender": "M",
+    "birthdate": "2009-05-06",
+    "section_id": 4,
+    "home_address": "125 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "EDESER, LUCINO ",
+    "contact_number": "09109791742",
+    "remarks": ""
+  },
+
+
+  {
+    "first_name": "JUSTINE",
+    "last_name": "ARIZALA",
+    "middle_name": "SAN DIEGO",
+    "lrn": "104973140030",
+    "gender": "M",
+    "birthdate": "2009-01-11",
+    "section_id": 4,
+    "home_address": "11 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "ARIZALA, ROLEX",
+    "contact_number": "09256874951",
+    "remarks": ""
+  },
+   
+
+  {
+    "first_name": "DAINIELLE",
+    "last_name": "BALBUENA",
+    "middle_name": "MIAAN",
+    "lrn": "104973140026",
+    "gender": "M",
+    "birthdate": "2009-05-13",
+    "section_id": 4,
+    "home_address": "13 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "BALBUENA, RANDY ",
+    "contact_number": "09266874951",
+    "remarks": ""
+  },
+{
+    "first_name": "CJ",
+    "last_name": "BERNARDINO,",
+    "middle_name": "SIBULO",
+    "lrn": "158535140024",
+    "gender": "M",
+    "birthdate": "2008-11-16",
+    "section_id": 4,
+    "home_address": "123  Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "BERNARDINO, JUANITO ",
+    "contact_number": "09156874951",
+    "remarks": ""
+  },
+
+  {
+    "first_name": "RODRIGO JR",
+    "last_name": "BIAGO",
+    "middle_name": "BECHAYDA",
+    "lrn": "136538140449",
+    "gender": "M",
+    "birthdate": "2009-01-01",
+    "section_id": 4,
+    "home_address": "01 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "BIAGO, RODRIGO SR",
+    "contact_number": "09276874951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "PRINCE JAYMON",
+    "last_name": "BIGAYAN",
+    "middle_name": "LUMOSBOG",
+    "lrn": "131468140051",
+    "gender": "M",
+    "birthdate": "2008-09-10",
+    "section_id": 4,
+    "home_address": "58 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "BIGAYAN, EMETERIO ",
+    "contact_number": "09236874951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "LHEI JHANZEN",
+    "last_name": "CAPIRAL",
+    "middle_name": "PANGILINAN",
+    "lrn": "104973140088",
+    "gender": "M",
+    "birthdate": "2009-06-25",
+    "section_id": 4,
+    "home_address": "38 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "CAPIRAL, REYNALDO ",
+    "contact_number": "09356874951",
+    "remarks": ""
+  },
+   
+   
+  {
+    "first_name": "JHON LEOMAR",
+    "last_name": "EBRADA",
+    "middle_name": "BARRON",
+    "lrn": "104952140173",
+    "gender": "M",
+    "birthdate": "2009-08-02",
+    "section_id": 4,
+    "home_address": "26 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "EBRADA, LEOFOLDO ",
+    "contact_number": "09326874925",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "NATHANIEL",
+    "last_name": "ELACION",
+    "middle_name": "VILLAMOR",
+    "lrn": "136543140260",
+    "gender": "M",
+    "birthdate": "2009-10-01",
+    "section_id": 4,
+    "home_address": "30 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "ELACION, EDMUNDO ",
+    "contact_number": "09186874952",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "RHALF LORENZ",
+    "last_name": "ENRICOSO",
+    "middle_name": "BORIGA",
+    "lrn": "136553150142",
+    "gender": "M",
+    "birthdate": "2009-08-14",
+    "section_id": 4,
+    "home_address": "87 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "ENRICOSO, JESSIE ",
+    "contact_number": "09321574951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "YUHAN",
+    "last_name": "GRATIL",
+    "middle_name": "CUYOS",
+    "lrn": "107154140240",
+    "gender": "M",
+    "birthdate": "2009-06-02",
+    "section_id": 4,
+    "home_address": "65 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "CUYOS,AMELITA",
+    "contact_number": "09266874951",
+    "remarks": ""
+  },
+   
+   {
+    "first_name": "ARMAN BRYAN",
+    "last_name": "LEGASPI",
+    "middle_name": "MAGSANO",
+    "lrn": "136615140567",
+    "gender": "M",
+    "birthdate": "2009-04-30",
+    "section_id": 4,
+    "home_address": "74 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "LEGASPI, ARMANDO ",
+    "contact_number": "09233874951",
+    "remarks": ""
+  },
+   
+  
+   
+  {
+    "first_name": "ANDREI",
+    "last_name": "MIAAN",
+    "middle_name": "UMALI",
+    "lrn": "104973140029",
+    "gender": "M",
+    "birthdate": "2009-10-02",
+    "section_id": 4,
+    "home_address": "171 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "UMALI,JENNIFER",
+    "contact_number": "091777574951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": ",JOSHUA",
+    "last_name": "MORALES,",
+    "middle_name": "GADAINGAN",
+    "lrn": "136836140580",
+    "gender": "M",
+    "birthdate": "2008-10-26",
+    "section_id": 4,
+    "home_address": "149 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "MORALES, JOSEPH ",
+    "contact_number": "09354874958",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "JHON CKELVIN",
+    "last_name": "ORMILLADA",
+    "middle_name": "",
+    "lrn": "136836150152",
+    "gender": "M",
+    "birthdate": "2009-03-17",
+    "section_id": 4,
+    "home_address": "125 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "ORMILLADA,DEVIE",
+    "contact_number": "09166874951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "AGUSTIN",
+    "last_name": "PONTIGON",
+    "middle_name": "NAGUIT",
+    "lrn": "111801130008",
+    "gender": "M",
+    "birthdate": "2007-08-20",
+    "section_id": 4,
+    "home_address": "023 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "PONTIGON, LEONARDO ",
+    "contact_number": "09354874951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "MARTIN ANGELO",
+    "last_name": "RAMIREZ",
+    "middle_name": "MERCADO",
+    "lrn": "104973150003",
+    "gender": "M",
+    "birthdate": "2008-12-11",
+    "section_id": 4,
+    "home_address": "45 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "RAMIREZ, MICHAEL ",
+    "contact_number": "09785874551",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "BRYLE EZEKIEL",
+    "last_name": "RAMOS",
+    "middle_name": "SAMSON",
+    "lrn": "136839140297",
+    "gender": "M",
+    "birthdate": "2009-06-20",
+    "section_id": 4,
+    "home_address": "58 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "RAMOS, RICKY ",
+    "contact_number": "09265874958",
+    "remarks": ""
+  },
+
+  {
+    "first_name": "CRISTIAN",
+    "last_name": "RAMOS",
+    "middle_name": "",
+    "lrn": "105119110021",
+    "gender": "M",
+    "birthdate": "2005-03-12",
+    "section_id": 4,
+    "home_address": "56 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "MARJAN,EBRON",
+    "contact_number": "09256874951",
+    "remarks": ""
+  },
+   
+    
+  {
+    "first_name": "JHON RICHARD",
+    "last_name": "RIVERA",
+    "middle_name": "FABIAN",
+    "lrn": "104973140007",
+    "gender": "M",
+    "birthdate": "2009-02-22",
+    "section_id": 4,
+    "home_address": "52 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "FABIAN,SHERYL",
+    "contact_number": "09256874951",
+    "remarks": ""
+  },
+   
+   
+  {
+    "first_name": "KHRIZ ANGEL",
+    "last_name": "SAMSON",
+    "middle_name": "BACULPO",
+    "lrn": "136839140705",
+    "gender": "M",
+    "birthdate": "2009-05-15",
+    "section_id": 4,
+    "home_address": "50 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "BACULPO,AILEEN",
+    "contact_number": "09256874951",
+    "remarks": ""
+  },
+  {
+    "first_name": "LORRAINE JADE",
+    "last_name": "ABANGGAN",
+    "middle_name": "DIAMANTE",
+    "lrn": "136611150240",
+    "gender": "F",
+    "birthdate": "2009-06-26",
+    "section_id": 4,
+    "home_address": "44 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "ABANGGAN JR,",
+    "contact_number": "095646874951",
+    "remarks": ""
+  },
+   
+
+  {
+    "first_name": "HANNAH YANICHELLE",
+    "last_name": "ABELLIGOS",
+    "middle_name": "SALUDAR",
+    "lrn": "113152140030",
+    "gender": "F",
+    "birthdate": "2009-03-14",
+    "section_id": 4,
+    "home_address": "12 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "ABELLIGOS, SONNY BOY",
+    "contact_number": "09352874951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "AUDREY VENICE",
+    "last_name": "ADONA",
+    "middle_name": "MANCAO",
+    "lrn": "109392140329",
+    "gender": "F",
+    "birthdate": "2009-05-01",
+    "section_id": 4,
+    "home_address": "62 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "ADONA, JONATHAN",
+    "contact_number": "09256874456",
+    "remarks": ""
+  },
+   
+
+  {
+    "first_name": "CHRISTAL HOPE",
+    "last_name": "AGUILAR",
+    "middle_name": "HONRADA",
+    "lrn": "136439150652",
+    "gender": "F",
+    "birthdate": "2009-01-02",
+    "section_id": 4,
+    "home_address": "512 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "AGUILAR, REN-REN ",
+    "contact_number": "09262574951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "JAENICAH MAE",
+    "last_name": "AVILA",
+    "middle_name": "ESTRELLA",
+    "lrn": "104973140006",
+    "gender": "F",
+    "birthdate": "2008-12-18",
+    "section_id": 4,
+    "home_address": "165 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "AVILA, HINDREX ",
+    "contact_number": "09175864951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "NOELYN MAE",
+    "last_name": "BERNASOL",
+    "middle_name": "CACHO",
+    "lrn": "136507140016",
+    "gender": "F",
+    "birthdate": "2009-03-30",
+    "section_id": 4,
+    "home_address": "160 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "CACHO,ARLENE",
+    "contact_number": "09256874951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "JANNELL",
+    "last_name": "BOTE",
+    "middle_name": "CABUNTOG",
+    "lrn": "107112140690",
+    "gender": "F",
+    "birthdate": "2009-11-05",
+    "section_id": 4,
+    "home_address": "158 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "BOTE, FERDINAND ",
+    "contact_number": "09266574951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "XENA HELENE",
+    "last_name": "DE GUZMAN",
+    "middle_name": "CORREA",
+    "lrn": "400876150081",
+    "gender": "F",
+    "birthdate": "2009-06-06",
+    "section_id": 4,
+    "home_address": "175 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "DE GUZMAN, JACK ",
+    "contact_number": "095624874951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "JERELYN",
+    "last_name": "ELLORAN",
+    "middle_name": "",
+    "lrn": "107662140045",
+    "gender": "F",
+    "birthdate": "2009-08-25",
+    "section_id": 4,
+    "home_address": "156 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "ELLORAN,JANNA MERRYLL",
+    "contact_number": "09256874854",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "MICHAELA JANE",
+    "last_name": "ESPIRITU",
+    "middle_name": "SALVADOR",
+    "lrn": "105140140130",
+    "gender": "F",
+    "birthdate": "2009-10-02",
+    "section_id": 4,
+    "home_address": "69 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "",
+    "contact_number": "09265894951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "ALEXANDRA",
+    "last_name": "FONTANILLA",
+    "middle_name": "",
+    "lrn": "109855140211",
+    "gender": "M",
+    "birthdate": "2009-01-22",
+    "section_id": 4,
+    "home_address": "14 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "FONTANILLA,ROSALYN",
+    "contact_number": "09106874951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "LYKA JANE",
+    "last_name": "GARGANTILLA",
+    "middle_name": "ROQUE",
+    "lrn": "104973140070",
+    "gender": "M",
+    "birthdate": "2009-01-26",
+    "section_id": 4,
+    "home_address": "25 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "GARGANTILLA, LINO ",
+    "contact_number": "09236874920",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "JE-ANN",
+    "last_name": "GEPITULAN,JE",
+    "middle_name": "CABIAD",
+    "lrn": "136523150029",
+    "gender": "F",
+    "birthdate": "2009-03-04",
+    "section_id": 4,
+    "home_address": "125 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "GEPITULAN, DIOSDADO ",
+    "contact_number": "091568634951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "CHANTEL MARIZ,",
+    "last_name": "HERNANDEZ",
+    "middle_name": "BALCE",
+    "lrn": "422518150086",
+    "gender": "F",
+    "birthdate": "2009-10-10",
+    "section_id": 4,
+    "home_address": "54 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "BALCE,MARILYN",
+    "contact_number": "09354111123",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "HILLARY MAE",
+    "last_name": "IB-IB",
+    "middle_name": "JAIME",
+    "lrn": "136621140115",
+    "gender": "F",
+    "birthdate": "2009-09-08",
+    "section_id": 4,
+    "home_address": "130 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "B-IB, JULITO ",
+    "contact_number": "09154876215",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": ",LEOSANDRA",
+    "last_name": "LADRA",
+    "middle_name": "GONZALES",
+    "lrn": "104922140257",
+    "gender": "F",
+    "birthdate": "2009-01-19",
+    "section_id": 4,
+    "home_address": "53 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "LADRA, LEONARDO",
+    "contact_number": "09152485951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "MARRY ANGELIE",
+    "last_name": "LAPLAP",
+    "middle_name": "CERILLO",
+    "lrn": "158537140146",
+    "gender": "M",
+    "birthdate": "2009-12-29",
+    "section_id": 4,
+    "home_address": "05 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "CERILLO,DINA",
+    "contact_number": "09256870214",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "SHANINE DYNE",
+    "last_name": "PACAONCIS",
+    "middle_name": "DIEL",
+    "lrn": "116094140028",
+    "gender": "F",
+    "birthdate": "2009-06-29",
+    "section_id": 4,
+    "home_address": "24 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "PACAONCIS, SANTY ",
+    "contact_number": "09756874951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "RANA NICOLE",
+    "last_name": "PARILLA",
+    "middle_name": "MALACAS",
+    "lrn": "136847150034",
+    "gender": "F",
+    "birthdate": "2009-11-18",
+    "section_id": 4,
+    "home_address": "011 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "PARILLA, RANDY ",
+    "contact_number": "09354874951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "MA ANGELA",
+    "last_name": "PASCUA",
+    "middle_name": "SORIANO",
+    "lrn": "406295151997",
+    "gender": "F",
+    "birthdate": "2009-01-30",
+    "section_id": 4,
+    "home_address": "512 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "ASCUA,AURORA",
+    "contact_number": "09356274951",
+    "remarks": ""
+  },
+   
+  {
+    "first_name": "CAMILLE ANN",
+    "last_name": "SANTOS",
+    "middle_name": "EPETITO",
+    "lrn": "158535140195",
+    "gender": "F",
+    "birthdate": "2009-05-09",
+    "section_id": 4,
+    "home_address": "157 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "SANTOS, EDGARDO",
+    "contact_number": "09356874951",
+    "remarks": ""
+  },
+     {
+    "first_name": "MICHELLE",
+    "last_name": "TUAZON",
+    "middle_name": "PEQUERO",
+    "lrn": "104771140001",
+    "gender": "F",
+    "birthdate": "2009-11-08",
+    "section_id": 4,
+    "home_address": "142 Cacarong Matanda, Pandi, Bulacan",
+    "guardian_name": "TUAZON, CIELITO ",
+    "contact_number": "09256874951",
+    "remarks": ""
+  }
+ ]
+   

@@ -1,0 +1,46 @@
+{%extends "administrator/base.html"%}
+{%load static%}
+{%load crispy_forms_tags%}
+
+{%block styles%}
+{%endblock styles%}
+
+{%block javascript%}
+<script>
+</script>
+{%endblock javascript%}
+
+{%block breadcrumbs%}
+<div class="container mt-2">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{%url 'dashboard'%}">Admin</a></li>
+      <li class="breadcrumb-item"><a href="{%url 'user-list'%}">Manage Users</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Add New User</li>
+    </ol>
+  </nav>
+</div>
+{%endblock breadcrumbs%}
+
+{%block content%}
+	<div class="container wow fadeIn">
+		<span class="display-4 font-weight-bold mt-4">
+			 add new user
+		</span>
+		<div class="row">
+			<div class="col-12">
+				<div class="content-section">
+					<form action="." enctype="multipart/form-data" method="POST">
+						{%csrf_token%}
+						<fieldset class="form-group">
+							{{form|crispy}}
+						</fieldset>
+						<div class="form-group text-right">
+							<input name="submit" class="btn btn-outline-success" name="submit" type="submit" value="add user">
+						</div>
+					</form>
+				</div>
+			</div>
+			</div>
+		</div>
+{%endblock content%}

@@ -1,0 +1,23 @@
+{%extends "main/base.html"%}
+{%load static%}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock styles %}
+{% block javascript %}
+{%endblock javascript%}
+{% block content %}
+  <footer>
+    <div class="footer bg-success border-top">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12">
+            <h5>&copy; cacaronges.edu.ph</h5>
+            <a href="#"><i class="fas fa-phone-square"></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fas fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+{%endblock content%}

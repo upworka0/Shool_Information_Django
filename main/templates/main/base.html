@@ -1,0 +1,94 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- Material Kit CSS -->
+  <link rel="stylesheet" href="{% static '/assets/css/material-kit.css'%}">
+
+  <!-- File Upload CSS -->
+  <!-- <link rel="stylesheet" href="{% static '/assets/css/jasny-bootstrap.min.css'%}"> -->
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="{% static '/assets/css/animate.min.css'%}">
+
+  <!-- Animate CSS -->
+  <!-- <link rel="stylesheet" href="{% static '/assets/css/OverlayScrollbars.min.css'%}"> -->
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{%static 'apple-touch-icon.png'%}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{%static 'favicon-32x32.png'%}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{%static 'favicon-16x16.png'%}">
+  <link rel="manifest" href="{%static 'site.webmanifest'%}">
+  <link rel="mask-icon" href="{%static 'safari-pinned-tab.svg'%}" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Title -->
+
+
+  {%if title%}
+  <title>{%block title%}{%endblock title%}| Cacarong IMS</title>
+  {%else%}
+  <title>Cacarong Elementary School</title>
+  {%endif%}
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{%static 'css/main.css'%}">
+
+  <style>
+    .turbolinks-progress-bar {
+  height: 2px;
+  background-color: green;
+  }
+  </style>
+
+  <!-- Page-specific CSS -->
+  {%block styles%}
+  {%endblock%}
+
+  <!--   Core JS Files   -->
+  <script src="{% static '/assets/js/core/jquery.min.js'%}"></script>
+  <script src="{% static '/assets/js/core/popper.min.js'%}"></script>
+  <script src="{% static '/assets/js/core/bootstrap-material-design.min.js'%}"></script>
+  <script src="{% static '/assets/js/plugins/jquery.overlayScrollbars.min.js'%}"></script>
+
+  <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
+  <script src="{% static '/assets/js/material-kit.min.js'%}"></script>
+
+  <!-- Turbolinks Plugin -->
+  <script src="{% static '/assets/js/plugins/turbolinks.js'%}"></script>
+  <script type="text/javascript">
+    Turbolinks.setProgressBarDelay(0);
+  </script>
+</head>
+
+<body>
+  <div class="body-wrap">
+      {%block content%}{%endblock content%}
+  </div>
+
+  <!-- Page JS -->
+  {%block javascript%}
+  {%endblock%}
+
+</body>
+
+</html>
